@@ -4,6 +4,7 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
+          app-dir: ~/2019/day_1
           args: pytest
           pkg-manager: pipenv
       - run:
