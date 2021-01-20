@@ -12,7 +12,7 @@ def calculate_fule(mass, _sum=0):
     fule = mass // 3 - 2 
     if fule > 0:
         _sum += fule
-        return calculate_fule(fule, _sum)
+        return calculate_fule(fule, _sum) 
     else:
         return _sum
 
