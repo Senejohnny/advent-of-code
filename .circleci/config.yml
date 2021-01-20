@@ -8,7 +8,7 @@ jobs:
           pkg-manager: pipenv
       - run:
           name: Test 
-          command: pipenv run pytest --version
+          command: pipenv run pytest 
           
 
 orbs:
