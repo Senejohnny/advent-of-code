@@ -1,6 +1,6 @@
 """ day 1 of advent of code """
 import os
-path = os.path.abspath('./day_1/input_day1.txt')
+path = os.path.abspath('./day_1/input_day1.txt') 
 with open(path) as file:
     modules_masses = [x.strip() for x in file.read().splitlines()]
 
@@ -12,7 +12,7 @@ def calculate_fule(mass, _sum=0):
     fule = mass // 3 - 2 
     if fule > 0:
         _sum += fule
-        return calculate_fule(fule, _sum) 
+        return calculate_fule(fule, _sum)   
     else:
         return _sum
 
